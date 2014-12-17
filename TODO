@@ -1,0 +1,10 @@
+TODO:
+* asteroids should break when shot
+* remove magic numbers from screen size
+  * read screen size from size of canvas?
+  * autoscale objects based on screen size?
+* more waves of asteroids
+* better graphics
+  * oldschool vector graphics?
+    * how does rotation work?
+* make this thing better than Norris's

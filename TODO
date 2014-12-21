@@ -1,13 +1,21 @@
 TODO:
-* fix thing where asteroid passes through ship at start point
+* restart game on collision
+  * fix thing where asteroid passes through ship at start point
 * read screen size from size of canvas?
 * autoscale objects based on screen size?
 
 TODO GRAPHICS:
 * asteroid destroy animation? (particle effects)
-* better asteroid and bullet graphics
+* better bullet graphics
 * ship destroy animation
 * bullets should come from top of ship, not center
+
+TODO POWERUPS/WEAPONS:
+* rapid fire
+* homing missiles
+* multidirectional laser
+* side ship / side weapon (sonic wave?)
+
 
 FEATURES:
 * shield
@@ -19,6 +27,7 @@ DONE:
 * asteroids should break when shot
 * asteroids bounce off each other
 * better ship graphics
+* better asteroid graphics
 * more waves
 * remove magic numbers from screen size
 

@@ -1,5 +1,4 @@
 TODO:
-* asteroids should break when shot
 * remove magic numbers from screen size
   * read screen size from size of canvas?
   * autoscale objects based on screen size?
@@ -17,3 +16,6 @@ FEATURES:
 * powerups
 * bomb
 * UFOs / enemy ships
+
+DONE:
+* asteroids should break when shot

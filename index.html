@@ -4,7 +4,7 @@
 </head>
 
 <body>
-  <canvas id="game-canvas" width="640" height="480">
+  <canvas id="game-canvas" width="800" height="600">
   </canvas>
 
   <script src="lib/utils.js"></script>
@@ -19,8 +19,10 @@
   <script>
     var canvasEl = document.getElementsByTagName("canvas")[0];
     var context = canvasEl.getContext("2d");
+    var width = canvasEl.scrollWidth;
+    var height = canvasEl.scrollHeight;
     var game = new Asteroids.Game();
-    var gameView = new Asteroids.GameView(game, context);
+    var gameView = new Asteroids.GameView(game, context, width, height);
     gameView.start();
   </script>
 

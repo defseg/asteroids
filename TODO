@@ -1,6 +1,5 @@
 TODO:
-* restart game on collision
-  * fix thing where asteroid passes through ship at start point
+* make sure asteroids don't spawn too close to the ship
 * read screen size from size of canvas?
 * autoscale objects based on screen size?
 
@@ -24,6 +23,8 @@ FEATURES:
 * UFOs / enemy ships
 
 DONE:
+* restart game on collision
+  * fix thing where asteroid passes through ship at start point
 * asteroids should break when shot
 * asteroids bounce off each other
 * better ship graphics

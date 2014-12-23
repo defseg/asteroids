@@ -1,4 +1,9 @@
 TODO:
+* fix bullet image
+* refactor BigBullet stuff, figure out what to do with that
+* add image rotation
+* remove all vector graphics stuff
+
 * make sure asteroids don't spawn too close to the ship
 * read screen size from size of canvas?
 * autoscale objects based on screen size?

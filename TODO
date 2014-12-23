@@ -1,11 +1,18 @@
 TODO:
-* make sure asteroids don't spawn too close to the ship
-* move bullet velocity stuff into bullet classes?
-* refactor BigBullet stuff, figure out what to do with that
-* get better BigBullet image
+-- ASTEROIDS:
+  * why do spawned asteroids sometimes immediately disappear?
+    (should probably make sure that asteroids' vectors point toward the screen)
 
-* read screen size from size of canvas?
-* autoscale objects based on screen size?
+-- BULLETS:
+  * move bullet velocity stuff into bullet classes?
+  * refactor BigBullet stuff, figure out what to do with that
+  * get better BigBullet image
+
+TODO CONTROLS:
+  *
+TODO GAMEVIEW:
+  * read screen size from size of canvas?
+  * autoscale objects based on screen size?
 
 TODO GRAPHICS:
 * asteroid destroy animation? (particle effects)
@@ -27,6 +34,7 @@ FEATURES:
 * UFOs / enemy ships
 
 DONE:
+* make sure asteroids don't spawn too close to the ship
 * fix asteroid spawning distance issue
 * remove all vector graphics stuff
 * add image rotation

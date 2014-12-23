@@ -2,6 +2,7 @@ TODO:
 -- ASTEROIDS:
   * why do spawned asteroids sometimes immediately disappear?
     (should probably make sure that asteroids' vectors point toward the screen)
+  * ensure minimum X and/or Y velocities for asteroids
 
 -- BULLETS:
   * move bullet velocity stuff into bullet classes?
@@ -9,7 +10,11 @@ TODO:
   * get better BigBullet image
 
 TODO CONTROLS:
-  *
+  * fix hideous cesspool of if statements for keys
+    * if (key.isPressed('up')) ...
+  * implement weapon switching once powerups exist
+  * (A S D?)
+
 TODO GAMEVIEW:
   * read screen size from size of canvas?
   * autoscale objects based on screen size?
@@ -26,9 +31,8 @@ TODO POWERUPS/WEAPONS:
 * multidirectional laser
 * side ship / side weapon (sonic wave?)
 
-
 FEATURES:
-* shield
+* shield (should make you bounce from asteroids?)
 * powerups
 * bomb
 * UFOs / enemy ships
@@ -48,4 +52,4 @@ DONE:
 * remove magic numbers from screen size
 
 BUGS:
-* mysterious random crashes at higher waves
+* mysterious random crashes at higher waves (probably fixed)

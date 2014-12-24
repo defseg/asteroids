@@ -1,6 +1,10 @@
 TODO:
+-- IMPORTANT:
+  * fix the rapid-fire powerup
+  * add powerup timeouts
+
 -- ASTEROIDS:
-  * why do spawned asteroids sometimes immediately disappear?
+  * why do spawned asteroids sometimes immediately disappear? (because of moveUntilNotCollided)
     (should probably make sure that asteroids' vectors point toward the screen)
   * ensure minimum X and/or Y velocities for asteroids
 
@@ -10,8 +14,6 @@ TODO:
   * get better BigBullet image
 
 TODO CONTROLS:
-  * fix hideous cesspool of if statements for keys
-    * if (key.isPressed('up')) ...
   * implement weapon switching once powerups exist
   * (A S D?)
 
@@ -24,20 +26,22 @@ TODO GRAPHICS:
 * better bullet graphics
 * ship destroy animation
 * bullets should come from top of ship, not center
+* do a better job of editing the shield graphics?
 
 TODO POWERUPS/WEAPONS:
-* rapid fire
 * homing missiles
 * multidirectional laser
 * side ship / side weapon (sonic wave?)
 
 FEATURES:
-* shield (should make you bounce from asteroids?)
-* powerups
 * bomb
 * UFOs / enemy ships
 
 DONE:
+* shield (should make you bounce from asteroids?)
+* powerups
+* rapid fire
+* better key handlers
 * make sure asteroids don't spawn too close to the ship
 * fix asteroid spawning distance issue
 * remove all vector graphics stuff

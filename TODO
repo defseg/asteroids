@@ -1,6 +1,5 @@
 TODO:
 -- IMPORTANT:
-  * fix the rapid-fire powerup
   * add powerup timeouts
 
 -- ASTEROIDS:
@@ -15,15 +14,15 @@ TODO:
 
 TODO CONTROLS:
   * implement weapon switching once powerups exist
-  * (A S D?)
+  * (A D?)
 
 TODO GAMEVIEW:
   * read screen size from size of canvas?
   * autoscale objects based on screen size?
 
 TODO GRAPHICS:
+* powerup graphics
 * asteroid destroy animation? (particle effects)
-* better bullet graphics
 * ship destroy animation
 * bullets should come from top of ship, not center
 * do a better job of editing the shield graphics?
@@ -38,6 +37,7 @@ FEATURES:
 * UFOs / enemy ships
 
 DONE:
+* better bullet graphics
 * shield (should make you bounce from asteroids?)
 * powerups
 * rapid fire

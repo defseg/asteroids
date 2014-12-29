@@ -1,6 +1,5 @@
 TODO:
 -- IMPORTANT:
-  * add powerup timeouts
 
 -- ASTEROIDS:
   * why do spawned asteroids sometimes immediately disappear? (because of moveUntilNotCollided)
@@ -12,22 +11,22 @@ TODO:
   * refactor BigBullet stuff, figure out what to do with that
   * get better BigBullet image
 
-TODO CONTROLS:
+-- CONTROLS:
   * implement weapon switching once powerups exist
   * (A D?)
 
-TODO GAMEVIEW:
+-- GAMEVIEW:
   * read screen size from size of canvas?
   * autoscale objects based on screen size?
 
-TODO GRAPHICS:
+-- GRAPHICS:
 * powerup graphics
 * asteroid destroy animation? (particle effects)
 * ship destroy animation
 * bullets should come from top of ship, not center
 * do a better job of editing the shield graphics?
 
-TODO POWERUPS/WEAPONS:
+-- POWERUPS/WEAPONS:
 * homing missiles
 * multidirectional laser
 * side ship / side weapon (sonic wave?)
@@ -37,6 +36,7 @@ FEATURES:
 * UFOs / enemy ships
 
 DONE:
+* add powerup timeouts
 * better bullet graphics
 * shield (should make you bounce from asteroids?)
 * powerups

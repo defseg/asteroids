@@ -1,5 +1,6 @@
 TODO:
 -- IMPORTANT:
+  * make powerups stack (kill all other timeouts triggered by the same object)
 
 -- ASTEROIDS:
   * why do spawned asteroids sometimes immediately disappear? (because of moveUntilNotCollided)

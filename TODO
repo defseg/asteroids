@@ -59,4 +59,4 @@ DONE:
 * remove magic numbers from screen size
 
 BUGS:
-* mysterious random crashes at higher waves (probably fixed)
+* some errors that don't seem to matter

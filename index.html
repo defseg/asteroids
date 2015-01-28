@@ -1,13 +1,77 @@
 <html>
 <head>
   <title>Asteroids</title>
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <style>
+    body {
+      background: #000;
+      color: #ccc;
+      font-family: monospace;
+      text-align: center;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    div {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    header {
+      height: 30px;
+    }
+
+    #canvas-container {
+      height: 90%;
+    }
+
+    li {
+      display: inline;
+      list-style-type: none;
+      text-align: center;
+    }
+
+    canvas {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </head>
 
 <body>
-  <canvas id="game-canvas" width="1200" height="740">
-  </canvas>
+
+  <header>
+    <div id="hud">
+      <ul>
+        <li>
+          Arrow keys to move. Space to shoot. S to shield.
+        </li>
+        <li>
+          Wave: <span id="wave">1</span>.
+        </li>
+        <li>
+          Shield: <span id="shield">300</span>.
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <div id="canvas-container">
+    <canvas id="game-canvas">
+    </canvas>
+    <script>
+      var canvas = document.getElementById('game-canvas');
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight - 30;
+    </script>
+  </div>
 
   <script src="lib/utils.js"></script>
+  <script src="lib/hud.js"></script>
   <script src="lib/movingObject.js"></script>
   <script src="vendor/keymaster.js"></script>
   <script src="lib/ship.js"></script>
@@ -30,16 +94,10 @@
     var context = canvasEl.getContext("2d");
     var width = canvasEl.scrollWidth;
     var height = canvasEl.scrollHeight;
-    var game = new Asteroids.Game();
+    var game = new Asteroids.Game(width, height);
     var gameView = new Asteroids.GameView(game, context, width, height);
     gameView.start();
   </script>
-  <br>
-  Controls:<br>
-  Arrow keys to move<br>
-  Space to shoot<br>
-  W to shoot fireballs<br>
-  Q and E to rotate slowly<br>
 
 </body>
 </html>

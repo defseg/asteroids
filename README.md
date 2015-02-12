@@ -37,3 +37,12 @@ described below.
   have no arms. Your snowballs disintegrate into three smaller snowballs in
   midair. The failure of this horrible dystopian future to provide spaceships
   with robot arms works to your advantage. You primitivist.
+
+Code
+----
+
+Asteroids uses JavaScript (obviously) and the HTML5 canvas. The sprites are from [here](http://www.lostgarden.com/2007/04/free-game-graphics-tyrian-ships-and.html), in some cases (the shield) with extensive editing.
+
+Asteroids is written to be easily extensible. All moving objects inherit (with the `inherits` method in Asteroids.Util) from MovingObject, items inherit from Item, and bullets inherit from Bullet. The `handleRemoval` hook allows objects to execute actions on removal: powerups execute their effects on the ship, asteroids break apart or disappear depending on size, and the brain boss explodes into asteroids.
+
+New powerups will require modification to `ship`. In the future, bullet type logic (currently only normal bullet vs. snowball) will be rewritten to make this unnecessary for powerups that improve the bullet type. However, since the ship handles its own firing logic, powerups that modify the ship's firing pattern (`PulseCannon` and `MultiCannon`) will require addition of the relevant logic to `Ship#shoot`.
